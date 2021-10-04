@@ -32,8 +32,25 @@
   }
 }
 
+a {
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 main {
   background: whitesmoke;
+}
+
+.wrapper {
+  width: min(768px, 90%);
+  margin: 0 auto;
+  padding: 2rem;
+  background: whitesmoke;
+  border-radius: 20px;
 }
 
 footer {
