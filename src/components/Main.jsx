@@ -1,8 +1,13 @@
 import React from 'react'
+import Javascript from "./Javascript";
+import CSS from "./CSS";
 
 function Main() {
   return (
-    <main></main>
+    <main className="wrapper">
+      <Javascript />
+      <CSS />
+    </main>
   )
 }
 

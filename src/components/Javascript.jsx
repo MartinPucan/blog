@@ -14,6 +14,8 @@ function Javascript() {
             <ul>
                 <li>Nullish coalescing</li>
                 <li>Template literal</li>
+                <li>Arrow function</li>
+                <li>Destructuring</li>
             </ul>
             <h5>Operators</h5>
             <ul>

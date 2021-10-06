@@ -11,6 +11,9 @@ function Header() {
                 <a href="#javascript">Javascript</a>
             </div>
             <div className="nav-item">
+              <a href="#css">CSS</a>
+            </div>
+            <div className="nav-item">
                 <a href="#programming">Programming</a>
             </div>
         </nav>
