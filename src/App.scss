@@ -24,9 +24,9 @@
   font-size: calc(10px + 2vmin);
 
   &-item {
-     padding: 0 2rem;
+    padding: 0 2rem;
 
-  & + & {
+    & + & {
       border-left: 2px solid whitesmoke;
     }
   }
@@ -46,7 +46,7 @@ main {
 }
 
 .wrapper {
-  width: min(768px, 90%);
+  width: min(999px, 90%);
   margin: 0 auto;
   padding: 2rem;
   background: whitesmoke;
@@ -57,4 +57,11 @@ footer {
   margin-top: auto;
   height: 8rem;
   background-color: #282c34;
+}
+
+.description {
+  font-size: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  background: #e3e3e3;
 }
