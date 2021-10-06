@@ -8,7 +8,7 @@ console.log(sortArray(arr))
 
 function Javascript() {
     return (
-        <section id="javascript" className="wrapper">
+        <section id="javascript">
             <h2>Javascript</h2>
             <h5>Expressions</h5>
             <ul>
