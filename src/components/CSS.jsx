@@ -20,6 +20,7 @@ function CSS() {
           <li>Element (1)</li>
         </ul>
         <div>
+          <a href="https://polypane.app/css-specificity-calculator">Specificity calculator</a>
           <code> {codeSpecificity} </code>
         </div>
       </div>
