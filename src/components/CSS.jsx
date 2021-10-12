@@ -21,9 +21,16 @@ function CSS() {
         </ul>
         <div>
           <a href="https://polypane.app/css-specificity-calculator">Specificity calculator</a>
-          <code> {codeSpecificity} </code>
+          <div>
+            <code> {codeSpecificity} </code>
+          </div>
         </div>
       </div>
+      <h5>Operators</h5>
+      <p>
+
+      </p>
+
     </section>
   )
 }
