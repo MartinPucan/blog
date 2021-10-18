@@ -4,7 +4,7 @@ const arr = [1, 5, 3, 6, 2, 9, 200, 4, 10, 40, 50];
 
 const sortArray = arr => arr.sort((a,b) => a - b)
 
-console.log(sortArray(arr))
+// console.log(sortArray(arr))
 
 function Javascript() {
     return (
