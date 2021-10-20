@@ -49,9 +49,7 @@ window.addEventListener('load', (event) => {
         headerColumn.addEventListener("click", () => {
             let arrowIcon = headerColumn.children[0]
 
-            if (!headerColumn.hasAttribute('data-sort')) {
-                return
-            }
+            if (!headerColumn.hasAttribute('data-sort')) { return }
             if (arrowIcon.classList.contains('arrow') && arrowIcon.classList.contains('down')) {
                 arrowIcon.classList.replace('down', 'up')
                 generateSortedTable(table, sortASCBy(tableValuesToObject(tableHeadTitles, tableBodyRows), headerColumn.textContent.toLowerCase()))
