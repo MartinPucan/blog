@@ -1,10 +1,18 @@
 import React from 'react'
 
-const codeSpecificity = `article { color: pink }
-.article { color: red }
-.article#article { color: blue }
-.article#article.title { color: purple }`
+const entryPrizeMoney = 1000;
+const yearAmount = 12 * entryPrizeMoney
+const interestRate = .1
+const totalAmountsEveryYear = []
 
+// for (let i = 0; i < 12; i++) {
+//   let
+//
+//   totalAmountsEveryYear.map(element => {
+//
+//   })
+//
+// }
 
 function CSS() {
   return (
@@ -21,9 +29,6 @@ function CSS() {
         </ul>
         <div>
           <a href="https://polypane.app/css-specificity-calculator">Specificity calculator</a>
-          <div>
-            <code> {codeSpecificity} </code>
-          </div>
         </div>
       </div>
       <h5>Operators</h5>
