@@ -1,20 +1,24 @@
-import React from 'react'
-
-const entryPrizeMoney = 1000;
-const yearAmount = 12 * entryPrizeMoney
-const interestRate = .1
-const totalAmountsEveryYear = []
-
-// for (let i = 0; i < 12; i++) {
-//   let
-//
-//   totalAmountsEveryYear.map(element => {
-//
-//   })
-//
-// }
+import React, {useEffect, useState} from 'react'
 
 function CSS() {
+  const [ users, setUsers ] = useState([]);
+
+  const fetchUsers = async () => {
+    try {
+      const response = await fetch(`https://reqres.in/api/users?page=2`);
+      const { data } = await response.json();
+      setUsers(data);
+    }
+    catch(error) {
+      console.log(error)
+    }
+  }
+
+  useEffect(() => {
+    fetchUsers()
+  }, [])
+
+
   return (
     <section id="css">
       <h2>CSS</h2>
@@ -34,6 +38,8 @@ function CSS() {
       <h2>Links</h2>
       <div>
         <h3>Bloggers</h3>
+        <p><a href="https://www.joshwcomeau.com">Josh Comeau</a></p>
+        <h3>Articles</h3>
         <p><a href="https://www.joshwcomeau.com/css/custom-css-reset/">CSS reset</a></p>
         <p><a href="https://css-tricks.com/a-proof-of-concept-for-making-sass-faster/">A Proof of Concept for Making Sass Faster</a></p>
         <p><a href="https://www.toptal.com/css/sass-mixins-keep-your-stylesheets-dry">Sass mixins keep your stylesheets dry</a></p>

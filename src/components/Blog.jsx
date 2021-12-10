@@ -14,7 +14,7 @@ function Blog() {
 
   return (<section className="blog-container">
     {blogPackage.map((article, index) => (
-      <article id={index}>
+      <article key={index}>
         <a>
           <h2>{article.title}</h2>
           <p>{article.content}</p>

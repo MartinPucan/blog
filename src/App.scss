@@ -20,7 +20,11 @@
     color: white;
 
     &:hover {
-      text-decoration: underline;
+      color: white;
+    }
+
+    &:after{
+      background: white;
     }
   }
 }

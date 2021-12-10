@@ -83,3 +83,45 @@ h2 {
 article {
   color: #282c34;
 }
+
+
+a,a:visited,a:hover,a:active{
+  -webkit-backface-visibility:hidden;
+  backface-visibility:hidden;
+  position: relative;
+  transition: .25s color ease;
+  text-decoration :none;
+  color: #1C2826;
+}
+
+a {
+  &:hover {
+    color:#D64550;
+  }
+
+  &:after{
+    content: "";
+    transition:0.45s all ease;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    position:absolute;
+  }
+
+  &:after{
+    bottom: -0.125em;
+  }
+
+  &:after{
+    height:0.125rem;
+    width:0;
+    background:#d73444;
+  }
+
+  &:after{
+    left:0;
+  }
+
+  &:hover:after{
+    width:100%;
+  }
+}
