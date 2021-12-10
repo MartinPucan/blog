@@ -1,0 +1,39 @@
+$values: (
+  1: .125rem,
+  2: .25rem,
+  3: .5rem,
+  4: .675rem,
+  5: .75rem,
+  6: .875rem,
+  7: 1rem
+);
+
+@each $value, $unit in $values {
+  .m-#{$value} {
+    margin: $unit;
+  }
+}
+
+@each $value, $unit in $values {
+  .mb-#{$value} {
+    margin-bottom: $unit;
+  }
+}
+
+@each $value, $unit in $values {
+  .mt-#{$value} {
+    margin-top: $unit;
+  }
+}
+
+@each $value, $unit in $values {
+  .ml-#{$value} {
+    margin-left: $unit;
+  }
+}
+
+@each $value, $unit in $values {
+  .mr-#{$value} {
+    margin-right: $unit;
+  }
+}

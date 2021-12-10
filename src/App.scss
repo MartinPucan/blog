@@ -1,3 +1,5 @@
+@use 'public/scss/utilities' as utilities;
+
 .container {
   min-height: 100vh;
   display: flex;

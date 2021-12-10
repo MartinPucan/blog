@@ -10,6 +10,10 @@ function Javascript() {
     return (
         <section id="javascript">
             <h2>Javascript</h2>
+            <h3>Links</h3>
+            <div className="">
+              <p><a href="https://1loc.dev/">One line utilities!</a></p>
+            </div>
             <h5>Expressions</h5>
             <ul>
                 <li>Nullish coalescing</li>
