@@ -1,5 +1,6 @@
 @use 'public/scss/utilities' as utilities;
 @use 'public/scss/links' as links;
+@use 'public/scss/scrollbar' as scrollbar;
 
 .container {
   min-height: 100vh;
@@ -13,9 +14,6 @@
 }
 
 .header {
-  background-image: url(/src/wave.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 1rem;
 
   a {
@@ -63,17 +61,11 @@ main {
   border-radius: 20px;
 }
 
-footer {
-  margin-top: auto;
-  height: 8rem;
-  background-color: #282c34;
-}
-
 .description {
   font-size: 90%;
   padding: 1rem;
   border-radius: 10px;
-  background: #e3e3e3;
+  background: var(--card-background);
 }
 
 table {
@@ -132,14 +124,16 @@ table [data-sort="test"] {
 
 .blog-container {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   margin: 2rem 0;
 
+  @media screen and (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
+
   article {
     cursor: pointer;
-    background: white;
-    box-shadow: 3px 7px 6px 3px lavender;
     border-radius: 1rem;
     padding: 1.5rem;
 
