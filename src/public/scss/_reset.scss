@@ -50,3 +50,25 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+
+* {
+  &::-webkit-scrollbar {
+    background: #F5F5F5;
+    width: 9px;
+    height: 9px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 9px;
+    background: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background: #acacac;
+  }
+
+  &:hover::-webkit-scrollbar-thumb {
+    background: #6b6b6b;
+  }
+}

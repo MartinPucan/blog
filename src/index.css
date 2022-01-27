@@ -1,0 +1,57 @@
+@use 'public/scss/reset' as reset;
+@use 'public/scss/colors' as colors;
+:root {
+  --background: #EEEEEE;
+  --text-primary: #393E46;
+  --card-background: #EEEEEE;
+  --article-box-shadow: lavender;
+  --header-color: -webkit-linear-gradient(#f3a234, #5114e7); }
+
+[data-theme='dark'] {
+  --background: #222831;
+  --text-primary: #EEEEEE;
+  --card-background: #434d5a;
+  --article-box-shadow: #30305a;
+  --header-color: -webkit-linear-gradient(#ffc107, #EEEEEE); }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 1.125rem;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%; }
+
+h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  background: var(--header-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+article {
+  color: var(--text-primary);
+  background-color: var(--card-background);
+  box-shadow: 3px 7px 6px 3px var(--article-box-shadow); }
+
+button {
+  background: transparent;
+  border: 0; }
+
+pre {
+  background-color: var(--card-background); }
+
+code {
+  overflow-x: scroll; }
+
+/*# sourceMappingURL=index.css.map */
