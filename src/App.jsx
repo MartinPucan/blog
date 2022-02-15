@@ -1,12 +1,12 @@
 import React from 'react'
 import Footer from "./components/Footer";
-import Main from "./components/Main";
 import './App.scss'
 import useLocalStorage from "use-local-storage";
 import { Routes, Route } from 'react-router-dom';
-import Javascript from "./pages/Javascript";
-import CSS from "./pages/CSS";
+import JavascriptPage from "./pages/JavascriptPage";
+import CSSPage from "./pages/CSSPage";
 import Header from "./components/Header";
+import BlogPage from "./pages/BlogPage";
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -18,8 +18,10 @@ function App() {
       <main className="wrapper">
         <Routes>
           <Route exact path="/" />
-          <Route path="/css" element={<CSS />} />
-          <Route path="/javascript" element={<Javascript />} />
+          <Route path="/css" element={<CSSPage />} />
+          <Route path="/javascript" element={<JavascriptPage />} />
+          <Route path="/blog" element={<BlogPage />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
       <Footer />
