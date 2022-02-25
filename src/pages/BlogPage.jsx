@@ -1,6 +1,6 @@
 import React from "react";
 
-function Blog() {
+function BlogPage() {
   const blogPackage = [
     {
       title: `Frontend developing`,
@@ -24,4 +24,4 @@ function Blog() {
   </section>);
 }
 
-export default Blog
+export default BlogPage
