@@ -1,6 +1,7 @@
 import React from 'react';
 import moon from "../../public/images/icons/moon.png";
 import sun from "../../public/images/icons/sun.png";
+import profileImage from "../../public/images/icons/me.jpeg";
 import {Link} from "react-router-dom";
 
 const Header = ({ stateChanger, stateTheme }) => {
@@ -11,6 +12,15 @@ const Header = ({ stateChanger, stateTheme }) => {
 
   return (
     <header className="header">
+        <div className="author--wrapper">
+            <div className="profile--image">
+                <img src={profileImage}  alt="Martin Pucan" />
+            </div>
+          <div>
+            <div className="name"><strong>Martin Pucan</strong></div>
+            <div className="profession">Frontend Developer</div>
+          </div>
+        </div>
       <div className="header--links">
         <Link to="/blog" className="option">
           <>Blog</>
