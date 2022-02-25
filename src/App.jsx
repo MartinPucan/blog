@@ -21,7 +21,7 @@ function App() {
           <Route path="/css" element={<CSSPage />} />
           <Route path="/javascript" element={<JavascriptPage />} />
           <Route path="/blog" element={<BlogPage />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact"/>
         </Routes>
       </main>
       <Footer />
