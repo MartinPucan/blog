@@ -14,10 +14,10 @@ a {
 
   &:after{
     content: "";
-    transition:0.45s all ease;
-    -webkit-backface-visibility:hidden;
-    backface-visibility:hidden;
-    position:absolute;
+    transition: 0.45s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
   }
 
   &:after{

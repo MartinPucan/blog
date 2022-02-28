@@ -13,9 +13,11 @@ const Header = ({ stateChanger, stateTheme }) => {
   return (
     <header className="header">
         <div className="author--wrapper">
+          <Link to="/">
             <div className="profile--image">
-                <img src={profileImage}  alt="Martin Pucan" />
+              <img src={profileImage}  alt="Martin Pucan" />
             </div>
+          </Link>
           <div>
             <div className="name"><strong>Martin Pucan</strong></div>
             <div className="profession">Frontend Developer</div>

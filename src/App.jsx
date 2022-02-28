@@ -8,6 +8,7 @@ import CSSPage from "./pages/CSSPage";
 import Header from "./components/Header";
 import BlogPage from "./pages/BlogPage";
 import Introduction from "./components/Main/Introduction";
+import NotFound from "./pages/NotFound";
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -23,6 +24,7 @@ function App() {
           <Route path="/javascript" element={<JavascriptPage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact"/>
+          <Route component={NotFound} />
         </Routes>
       </main>
       <Footer />
