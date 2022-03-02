@@ -1,8 +1,8 @@
 import React from 'react'
-import Footer from "./components/Footer";
+import Footer from './components/Footer';
 import './App.scss'
 import useLocalStorage from "use-local-storage";
-import { Routes, Route } from 'react-router-dom';
+import {Routes, Route} from 'react-router-dom';
 import JavascriptPage from "./pages/JavascriptPage";
 import CSSPage from "./pages/CSSPage";
 import Header from "./components/Header";
@@ -19,12 +19,14 @@ function App() {
       <Header stateChanger={setTheme} stateTheme={theme} />
       <main className="wrapper">
         <Routes>
-          <Route exact path="/" element={<Introduction />}/>
-          <Route path="/css" element={<CSSPage />} />
-          <Route path="/javascript" element={<JavascriptPage />} />
-          <Route path="/blog" element={<BlogPage />} />
-          <Route path="/contact"/>
-          <Route component={NotFound} />
+          <Route path="/">
+            <Route index element={<Introduction />}/>
+            <Route path="css" element={<CSSPage />} />
+            <Route path="javascript" element={<JavascriptPage />} />
+            <Route path="blog" element={<BlogPage />} />
+            <Route path="contact"/>
+          </Route>
+          <Route path="*" element={NotFound} />
         </Routes>
       </main>
       <Footer />

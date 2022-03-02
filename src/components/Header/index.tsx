@@ -4,7 +4,12 @@ import sun from "../../public/images/icons/sun.png";
 import profileImage from "../../public/images/icons/me.jpeg";
 import {Link} from "react-router-dom";
 
-const Header = ({ stateChanger, stateTheme }) => {
+type ThemeController = {
+  stateChanger: any,
+  stateTheme: string
+}
+
+const Header = ({stateChanger, stateTheme}: ThemeController) => {
   const switchTheme = () => {
     const newTheme = stateTheme === 'light' ? 'dark' : 'light'
     stateChanger(newTheme)
@@ -12,17 +17,17 @@ const Header = ({ stateChanger, stateTheme }) => {
 
   return (
     <header className="header">
-        <div className="author--wrapper">
-          <Link to="/">
-            <div className="profile--image">
-              <img src={profileImage}  alt="Martin Pucan" />
-            </div>
-          </Link>
-          <div>
-            <div className="name"><strong>Martin Pucan</strong></div>
-            <div className="profession">Frontend Developer</div>
+      <div className="author--wrapper">
+        <Link to="/">
+          <div className="profile--image">
+            <img src={profileImage} alt="Martin Pucan"/>
           </div>
+        </Link>
+        <div>
+          <div className="name"><strong>Martin Pucan</strong></div>
+          <div className="profession">Frontend Developer</div>
         </div>
+      </div>
       <div className="header--links">
         <Link to="/blog" className="option">
           <>Blog</>
@@ -38,8 +43,8 @@ const Header = ({ stateChanger, stateTheme }) => {
         <button onClick={switchTheme} title="Activate dark mode">
           {
             stateTheme === 'light'
-              ? <img src={moon} className="rotate" width={32} alt="dark-mode" />
-              : <img src={sun} className="rotateConversely" width={32} alt="light-mode" />
+              ? <img src={moon} className="rotate" width={32} alt="dark-mode"/>
+              : <img src={sun} className="rotateConversely" width={32} alt="light-mode"/>
           }
         </button>
       </div>

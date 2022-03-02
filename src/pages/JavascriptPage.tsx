@@ -2,7 +2,7 @@ import React from 'react'
 
 const arr = [1, 5, 3, 6, 2, 9, 200, 4, 10, 40, 50];
 
-const sortArray = arr => arr.sort((a,b) => a - b)
+const sortArray = (arr: any[]) => arr.sort((a,b) => a - b)
 
 function JavascriptPage() {
     return (
